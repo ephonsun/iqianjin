@@ -1,0 +1,109 @@
+*{
+	padding:0;
+	margin:0;
+}	
+	/*全局样式开始*/
+	a{
+		color:rgb(115, 133, 157);
+	}
+	.aqjred{
+		color: rgb(237, 124, 94)!important;
+	}
+	/*全局样式结束*/
+	nav{
+		min-width:1200px;
+		height:80px;
+		border: 1px solid red;
+		line-height:30px;
+	}
+	nav .aqj-top{
+		height:30px;
+		width:100%;
+		background: rgb(54, 59, 63);
+	}
+	nav .aqj-top .con{
+		width:1200px;
+		height:30px;
+		margin:0 auto;
+		border: 1px solid red;
+		background: #66ffff;
+	}
+	nav .fa,nav span{
+		color:rgb(115, 133, 157);
+	}
+	nav .aqj-top span{
+		display:inline-block;
+		line-height: 30px;
+		margin-left:0.3em;
+		
+	}
+	nav i{
+		display: inline-block;
+		width:16px;
+		height:16px;
+		/*border: 1px solid red;*/
+		position: relative;
+		top:0.2em;
+		margin-right:0.4em;
+	}
+	nav .mobile{
+		background: url(../img/sp1-new.png);
+		background-position:  -486px -102px;
+	}nav .phone{
+		background: url(../img/sp1-new.png);
+		background-position:  -466px -336px;
+	}
+	nav .chat{
+		width:21px;
+		width:21px;
+		background: url(../img/sp1-new.png);
+		background-position:  -400px -395px;
+	}
+	nav .aqj-top .pull-left:hover .mobile{
+		background-position:  -485px -136px;
+	}
+	nav .aqj-top li:hover .phone{
+		background-position:  -442px -337px;
+	}
+	nav .aqj-top li:hover .chat{
+		background-position:  -426px -395px;
+	}
+	nav li{
+		margin-right: 2em;
+	}
+	nav li:hover span,nav .pull-left:hover span{
+		color: rgb(237, 124, 94);
+	}
+	nav .ajq-menu{
+		height:50px;
+	}
+	nav .aqj-menu .logo{
+		background-image: url(../img/sp1-new.png);
+	background-position: 0 -297px;
+    width: 334px;
+    height: 44px;
+    
+	}
+	/*重写导航链接样式*/
+	nav .navbar-nav li{
+		list-style: none;
+	}
+	nav .navbar-nav li a{
+		display: inline-block;
+		font-size: 16px;
+		/*padding:20px 0 20px 14px;*/
+		margin-left:14px;
+		text-decoration: none;
+		color:#333;
+		text-align: center;
+		padding-bottom:5px;
+		/*border-bottom:3px solid rgb(237, 124, 94);*/
+	}
+	nav li .active{
+		color: rgb(237, 124, 94)!important;
+		border-bottom:3px solid rgb(237, 124, 94);
+	}
+	nav .navbar-nav li a:hover{
+		color: rgb(237, 124, 94)!important;
+		border-bottom:3px solid rgb(237, 124, 94);
+	}
