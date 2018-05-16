@@ -2,3 +2,361 @@
 	padding:0;
 	margin:0;
 }
+/*#banner{
+	width: 100%;
+	height:100%;
+}*/
+.container {
+    padding:0!important;
+}
+ div.item img{
+    width:100%;
+   }
+   #banner{
+   	position: relative;
+   	overflow: hidden; 
+   	height: 310px;
+   }
+  #banner .item a{
+  	display: inline-block;
+  	width: 100%;
+  	height:310px;
+  }
+  /*控制轮播的左右翻页样式*/
+ 	#banner a[class~=leftside],#banner a[class~=rightside]{
+ 		background:rgba(0,0,0,0.4);
+ 		width:80px;
+ 		height:110px;
+ 		color:#fff;
+ 		border: 1px solid #666;
+ 		z-index: 30;
+ 	}
+/*右侧登陆框*/
+	#banner .login{
+		position: absolute;
+		right:0px;
+		top:0px;
+		/*height:184px;*/
+		overflow: hidden;
+		padding:30px 15px;
+		background: rgba(0,0,0,0.6);
+		color: #fff;
+		
+	}
+	#banner .login .login-btn{
+		padding: 5px 56px;
+		background-color:rgb(237, 124, 94)!important;
+		color:#fff;
+	}
+	/*数据统计*/
+	#data{
+		min-width:1200px;
+		height:80px;
+		/*border: 1px solid orange;*/
+		/*margin-top: 40px;*/
+		background: #fff;
+		padding:0;
+	}
+	#data .data-tj{
+		height: 80px;
+		
+	}
+	#data .left{
+		display: flex;
+		justify-content: space-between;
+		margin-left:-20px;
+	}
+	#data .right{
+		display:flex;
+		justify-content: space-between;
+		margin-left:20px;
+		padding:0;
+	}
+	#data .left [class^=pic]{
+		width:56px;
+		height:56px;
+		
+		background:url(../img/index-security-icon.png) no-repeat ;
+	}
+	#data .left a{
+		float: left;
+		/*margin-right:2.62em;*/
+		color: #58619f;
+		text-decoration: none;
+	}
+	.pic1{
+		background-position: 0 0!important;
+	}
+	.pic2{
+		background-position: -75px 0!important;
+	}
+	.pic3{
+		background-position: -155px 0!important;
+	}
+	.pic4{
+		background-position: -224px 0!important;
+	}
+	.pic5{
+		background-position: -299px 0!important;
+	}
+	#data .right div{
+		float: left;
+		
+		margin-top: 22px;
+		text-align: center;
+		margin-right: 29px;
+	}
+	#data .num{
+		color: #5d83ca;
+    font-size: 22px;
+    text-align: right;
+	}
+	#data .right .text{
+		font-size:14px;
+    color: #858585;
+    text-align: right
+	} 
+	/*投标展示区*/
+	#content {
+		background: url(../img/bg_icon_production.png) repeat;
+		min-width: 1170px;
+		/*height:600px;*/
+		margin-top:2px;
+		overflow: hidden;
+		padding:50px;
+	
+	}
+		/*新手特权*/
+	#content .xstq{
+		width:1170px;
+		margin:0px auto;
+		margin-top: 20px;
+		padding-top: 20px;
+		height:180px;
+		border:1px solid rgb(237, 124, 94)!important;;
+		background: #fff;
+	}	
+	#content .xstq ul{
+		display: flex;
+		justify-content:space-between;
+		list-style: none;
+	}
+	#content .xstq ul li .pic{
+		width: 373px;
+    height: 102px;
+	background: url(../img/index-sp.png) no-repeat;
+	background-position: -11px 0;
+	}
+	#content .xstq ul li .title{
+		margin-top:14px!important;
+	}
+	#content .num{
+		font-size: 3em;
+	}
+	#content  .txt{
+		font-size: 1.6em;
+	}
+	#content  [class='ptxt']{
+		color: #888!important;
+		font-size:13px;
+	}
+	#content .xstq ul li:nth-child(4) .data{
+		color:#333;
+		font-size:1.4em;
+		display: block;
+		margin-top:67px;
+		margin-bottom:8px;
+	}
+	#content .btn{
+		background-color:#fff;
+		border:1px solid #f1905e;
+		margin:60px 20px;
+		padding:5px 18px;
+	}
+	/*p2p产品*/
+	#content .p2p{
+		background-color: #fff;
+		margin-top: 20px;
+		height:890px;
+		/*overflow: hidden;*/
+		border: 1px solid red;
+		/*overflow: hidden;*/
+		width:1170px;
+	}
+	/*零钱宝样式*/
+	#content .p2p .lqb{
+		height:120px;
+		border-bottom: 1px solid #ddd;
+		position: relative;
+		/*display: flex;
+		justify-content: space-around;*/
+	}
+	.p2p  .left{
+		position: relative;
+		left:80px;
+		top:30px;
+		display: flex;
+	}
+	#content .p2p  .news{
+		position: absolute;
+		width:65px;
+		height:55px;
+		top:0;
+		background: url(../img/index-sp.png) no-repeat -475px 0;
+	}
+	#content .p2p  .pic{
+		width:55px;
+		height:55px;
+		background: url(../img/index-sp.png) no-repeat ;
+		background-position: -475px -327px;
+	}
+	#content .p2p  .name{
+		font-size: 1.8em;
+		position: relative;
+		top: 10px;
+		left:10px;
+		font-weight:500;
+	}
+	#content .p2p  .center{
+		position: relative;
+		top:-30px;
+		left: 380px;
+		display: flex;
+	}
+	#content .p2p  .center .p2p-tag{
+		display: inline-block;
+		width:120px;
+		padding:8px 12px;
+		border-radius:5px;
+		/*overflow: hidden;*/
+		color:#fff;
+		position: relative;
+		left:20px;
+	}
+	#content .p2p  .center .p2p-tag i{
+		width:0;
+		height:0;
+		border: 10px solid transparent;
+		border-right-color:#fe9d58;
+		position: absolute;
+		top:8px;
+		left: -20px;
+		
+	}
+	#content .p2p .center .sdq{
+		position: relative;
+		left: 60px;
+	}
+	.center .sdq .data{
+		font-size: 1.4em;
+		color: #666;
+	}
+	/*立即加入按钮*/
+	#content .p2p .btn{
+		background-color:#fff;
+		border:1px solid #f1905e;
+		margin:60px -5px;
+		padding:5px 18px;
+	}
+	.right .btn{
+		position:relative;
+		/*right:200px;*/
+		top:-40px;
+		left:340px;
+	}
+	/*零钱宝结束*/
+	.p2p .zcb{
+		position: relative;
+	}
+	#content .p2p .zcb .row{
+		margin-top:0px;
+		/*height:120px;*/
+		/*overflow:hidden;*/
+	}
+	.p2p .zcb .wel{
+		position: absolute;
+		width:65px;
+		height:55px;
+		top:0;
+		left: 0;
+		background: url(../img/index-sp.png) no-repeat -475px -135px;
+	}
+	.p2p .zcb .left{
+		position: relative;
+		left:90px;
+	}
+	#content .p2p .zcb .center {
+		position: relative;
+		/*left: 120px;*/
+		left:400px
+	}
+	/*/媒体报道*/
+    #report{
+        min-width:1170px;
+        background:#fff;
+        height:260px;
+        /*padding-bottom:50px;*/
+        /*overflow: hidden;*/
+    }
+    #report .aqjbt >.title{
+        border-bottom: 2px solid rgb(255, 158, 87);
+        /*padding-left:-60px;*/
+        padding-bottom: 20px;
+    }
+    #report .aqjbt{
+        padding:0;
+    }
+    /*设置文本溢出隐藏*/
+    #report .aqjbt .left-c ul li a{
+        display: inline-block;
+        width:248px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+        color:#8d9199;
+        text-decoration:none;
+    }
+    .left-c ul li a i{
+        font-style: normal;
+        color:#333;
+        margin-right:0.6em;
+    }
+    #report .aqjbt .left-r ul li{
+        float:left;
+        width:50%;
+        /*border:1px solid red ;*/
+        /*margin:4*/
+
+    }
+    /*右侧新闻信息样式*/
+    #report .right ul li a .title{
+    display: inline-block;
+    width:180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    color:#8d9199;
+    text-decoration:none;
+    }
+.right .data{
+    color:#8d9199;
+}
+    /*合作伙伴*/
+#parter{
+    margin-top:20px;
+    min-width: 1170px;
+    height:80px;
+    background-color:#e4e4e4;
+}
+#parter ul li{
+    list-style: none;
+    float: left;
+
+}
+#parter ul li img{
+    margin:0  20px;
+    padding-top: 20px;
+}
+

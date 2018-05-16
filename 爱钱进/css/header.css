@@ -1,7 +1,19 @@
 *{
 	padding:0;
 	margin:0;
-}	
+}
+	/*禁用响应式*/
+	.container { 
+				width: 1170px !important; 
+				max-width: none !important; 
+				}
+				/*一下解决轮播图占用当前页面100%问题*/
+		@media screen and (max-width: 1400px) { 
+				body{ 
+				width: 1400px; 
+				} 
+		}
+		/*禁用响应式结束*/
 	/*全局样式开始*/
 	a{
 		color:rgb(115, 133, 157);
@@ -9,11 +21,14 @@
 	.aqjred{
 		color: rgb(237, 124, 94)!important;
 	}
+	.aqjbg{
+		background-color: #fe9d58;
+	}
 	/*全局样式结束*/
 	nav{
 		min-width:1200px;
 		height:80px;
-		border: 1px solid red;
+		/*border: 1px solid red;*/
 		line-height:30px;
 	}
 	nav .aqj-top{
@@ -74,8 +89,12 @@
 	nav li:hover span,nav .pull-left:hover span{
 		color: rgb(237, 124, 94);
 	}
-	nav .ajq-menu{
+	nav .aqj-menu{
 		height:50px;
+	}
+	nav .aqj-menu .box,.aqj-top .box{
+		margin: 0 auto;
+		width: 1170px!important;
 	}
 	nav .aqj-menu .logo{
 		background-image: url(../img/sp1-new.png);
@@ -85,10 +104,16 @@
     
 	}
 	/*重写导航链接样式*/
-	nav .navbar-nav li{
+		nav .nav-link {
+			margin-bottom:0;
+			
+		}
+	nav .nav-link li{
 		list-style: none;
+		float: left;
+		line-height:32px;
 	}
-	nav .navbar-nav li a{
+	nav .nav-link li a{
 		display: inline-block;
 		font-size: 16px;
 		/*padding:20px 0 20px 14px;*/
@@ -103,7 +128,68 @@
 		color: rgb(237, 124, 94)!important;
 		border-bottom:3px solid rgb(237, 124, 94);
 	}
-	nav .navbar-nav li a:hover{
+	nav .nav-link li a:hover{
 		color: rgb(237, 124, 94)!important;
 		border-bottom:3px solid rgb(237, 124, 94);
 	}
+/*底部内容    */
+footer {
+    min-width: 1200px;
+    height:240px;
+    background-color:#363b3f;
+}
+footer .pic .user{
+    width: 233px;
+    height: 143px;
+    display: inline-block;
+    background:url("../img/footer_service.png");
+}
+footer .foot-link ul{
+    border-left:1px solid rgb(64, 69, 73);
+    border-right:1px solid rgb(64, 69, 73);
+    text-align: center;
+}
+footer .foot-link ul li{
+    list-style: none;
+    width:30%;
+    float: left;
+}
+footer .foot-link ul li a{
+    text-decoration: none;
+    color:#767c88;
+    padding:5px 3px;
+    display: inline-block;
+}
+footer .foot-link ul li a:hover{
+    color:#fff;
+}
+footer .ewm{
+
+}
+footer .ewm dt{
+    width:85px;
+    height:85px;
+    background-image: url(../img/sp1-new.png);
+    /*position: relative;*/
+    /*text-align: center;*/
+    margin: 0 auto;
+}
+footer .ewm dt:nth-child(1){
+    background-position: -189px 0;
+
+    /*left:5px;*/
+}
+footer .ewm dt:nth-child(2){
+    background-position: 0 -134px;
+    /*left:27px;*/
+}
+footer .ewm dd{
+    text-align: center;
+    color:#757b87;
+}
+/*copy部分*/
+footer .copy{
+    width:100%;
+    background-color:#3f4448;
+    height:80px;
+}
