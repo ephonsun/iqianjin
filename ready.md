@@ -1,15 +1,15 @@
-author:Ê®ÔÂÃÎÏë
+author:åæœˆæ¢¦æƒ³
 blog:  http://cncat.cn
-ÏîÄ¿:  °®Ç®½øpc¶ËÒ³Ãæ·ÂÕ¾
-data:  2018Äê/05ÔÂ/14ÈÕ
-¿ò¼Ü:jQuery+bootstrap+fontawesome(×ÖÌå¿â)
-ÏîÄ¿½éÉÜ:´ý¶¨!
+é¡¹ç›®:  çˆ±é’±è¿›pcç«¯é¡µé¢ä»¿ç«™
+data:  2018å¹´/05æœˆ/14æ—¥
+æ¡†æž¶:jQuery+bootstrap+fontawesome(å­—ä½“åº“)<br/>
+é¡¹ç›®ä»‹ç»:å¾…å®š!
 --------------------------------------------------
-¸üÐÂÈÕÖ¾:
-2018Äê05ÔÂ21ÈÕ¸üÐÂÖ÷ÒªÄÚÈÝ:
-¢ÙÍê³ÉÊ×Ò³ºÍÏîÄ¿Í¶×ÊÒ³Ãæ»ù±¾¼ÜÉè
-¢ÚÍ¶×ÊÒ³ÃæÆÀÂÛÄ£¿éÎ´ÍêÉÆ
-¢Û:Ê×Ò³ÓÒÏÂ²à±ßÀ¸µÄ°üÀ¨jsÎ´Íê³É
-´ý´¦Àíbug:
-¢Ù:importÄ£¿éÔÚchromeÒÔÍâä¯ÀÀÆ÷¼æÈÝÐÔÎÊÌâ(²»ÄÜÒýÈëÎ´À´Ä£°åµÄcss)
-½â¾ö:ÒýÈëÄ£°åËùÐèµÄcss
+æ›´æ–°æ—¥å¿—:
+2018å¹´05æœˆ21æ—¥æ›´æ–°ä¸»è¦å†…å®¹:
+â‘ å®Œæˆé¦–é¡µå’Œé¡¹ç›®æŠ•èµ„é¡µé¢åŸºæœ¬æž¶è®¾
+â‘¡æŠ•èµ„é¡µé¢è¯„è®ºæ¨¡å—æœªå®Œå–„
+â‘¢:é¦–é¡µå³ä¸‹ä¾§è¾¹æ çš„åŒ…æ‹¬jsæœªå®Œæˆ
+å¾…å¤„ç†bug:
+â‘ :importæ¨¡å—åœ¨chromeä»¥å¤–æµè§ˆå™¨å…¼å®¹æ€§é—®é¢˜(ä¸èƒ½å¼•å…¥æœªæ¥æ¨¡æ¿çš„css)
+è§£å†³:å¼•å…¥æ¨¡æ¿æ‰€éœ€çš„css
