@@ -1,6 +1,14 @@
-ï»¿author:åæœˆæ¢¦æƒ³
+author:Ê®ÔÂÃÎÏë
 blog:  http://cncat.cn
-é¡¹ç›®:  çˆ±é’±è¿›pcç«¯é¡µé¢ä»¿ç«™
-data:  2018å¹´/05æœˆ/14æ—¥
-æ¡†æž¶:jQuery+bootstrap
-é¡¹ç›®ä»‹ç»:å¾…å®š!
+ÏîÄ¿:  °®Ç®½øpc¶ËÒ³Ãæ·ÂÕ¾
+data:  2018Äê/05ÔÂ/14ÈÕ
+¿ò¼Ü:jQuery+bootstrap+fontawesome(×ÖÌå¿â)
+ÏîÄ¿½éÉÜ:´ý¶¨!
+--------------------------------------------------
+¸üÐÂÈÕÖ¾:
+2018Äê05ÔÂ21ÈÕ¸üÐÂÖ÷ÒªÄÚÈÝ:
+¢ÙÍê³ÉÊ×Ò³ºÍÏîÄ¿Í¶×ÊÒ³Ãæ»ù±¾¼ÜÉè
+¢ÚÍ¶×ÊÒ³ÃæÆÀÂÛÄ£¿éÎ´ÍêÉÆ
+´ý´¦Àíbug:
+¢Ù:importÄ£¿éÔÚchromeÒÔÍâä¯ÀÀÆ÷¼æÈÝÐÔÎÊÌâ(²»ÄÜÒýÈëÎ´À´Ä£°åµÄcss)
+½â¾ö:ÒýÈëÄ£°åËùÐèµÄcss

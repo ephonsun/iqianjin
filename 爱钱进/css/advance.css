@@ -1,0 +1,406 @@
+/*advance文件:投资项目页面样式*/
+*{
+    padding:0;
+    margin:0;
+}
+
+/*公共样式*/
+.ptxt{
+    margin-top:2px;
+    font-size: 12px;
+    color: #d0d0d0;
+}
+/*解决advance页面第一个子项显示问题*/
+#header .aqj-menu .nav-link li .active{
+    color: #333333 !important;
+    border-bottom: none;
+}
+#header .aqj-menu .nav-link li .active:hover{
+    color: rgb(237, 124, 94)!important;
+    border-bottom:3px solid rgb(237, 124, 94);
+}
+#header .aqj-menu .nav-link li:nth-child(2) a{
+    color: rgb(237, 124, 94)!important;
+    border-bottom:3px solid rgb(237, 124, 94);
+}
+/*解决advance页面tab标签问题*/
+/*公共样式结束*/
+/*投资项目*/
+#advance{
+    min-width:1170px;
+    /*height:1200px;*/
+    overflow: hidden;
+    border:1px solid orange;
+    border-top-color:#e7ebee ;
+}
+#advance .title{
+    padding:20px 0;
+    height:38px;
+    padding-bottom:55px;
+    border-bottom: 6px solid #586171;
+}
+#advance .title i{
+    display:inline-block;
+    width:40px;
+    height:38px;
+    background:url("../img/sp.png") no-repeat -306px -172px;
+}
+#advance .title .txt{
+    color: #586172;
+    font-size: 18px;
+    display:inline-block;
+    /*line-height: 38px;*/
+    position: relative;
+    top:-50%;
+    transform:translateY(-50%);
+    margin-left:8px;
+}
+/*理财产品模块*/
+#advance .main{
+    /*height:1100px;*/
+    border: 1px solid #666;
+    margin-top: 20px;
+    /*overflow: hidden;*/
+}
+#advance .main .row{
+    width:inherit;
+    margin: 0 auto;
+    height:180px;
+    /*padding:10px 0 20px 0;*/
+    /*overflow: hidden;*/
+    border:1px solid #ddd;
+    margin-bottom:30px;
+    position: relative;
+}
+.row .left{
+    height:inherit;
+    background-color:#edeff5;
+}
+/*p2p产品公共样式*/
+    .row .pname{
+        text-align: center;
+        font-size: 12px;
+        color: #74859c;
+        margin: 0 auto;
+        width:100%;
+    }
+    .row .pdesc{
+        position: absolute;
+        bottom:10px;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        color: #61a0ea;
+        left:50%;
+        transform: translateX(-50%);
+
+    }
+    .row .right .step{
+        position: relative;
+        /*margin-top:20px;*/
+    }
+    .row .right .step .snum{
+        display: inline-block;
+        width:35px;
+        height:35px;
+        border-radius: 50%;
+        background:#d6d9dd;
+        font-style: normal;
+        color:#fefefe;
+        text-align: center;
+        line-height: 35px;
+        margin-left:70px;
+    }
+.row .right .step p:nth-child(3)  .snum{
+    position: relative;
+    left:-24px;
+    /*color:#66ffff;*/
+}
+    .row .right .step .icon1{
+        display: inline-block;
+        width: 18px;
+        height:24px;
+        background:url("../img/sp.png") no-repeat -243px -240px;
+        position: absolute;
+        top:34px;
+        left:85px;
+    }
+.row .right .step .icon2{
+    display: inline-block;
+    width: 18px;
+    height:24px;
+    background:url("../img/sp.png") no-repeat -266px -240px;
+    position: absolute;
+    top:68px;
+    left:80px;
+}
+span[class='stxt']{
+    color:rgb(93, 93, 93);
+    font-size: 14px;
+    margin-left:1em;
+}
+ .lqb .step p:nth-child(3) .stxt,.sbiao .step p:nth-child(3) .stxt{
+    position: absolute;
+    left:100px;
+    top:50px;
+}
+  /*右侧标签页样式通用*/
+	.right .rtag{
+		margin-left: 20px;
+		width:120px;
+		border: 1px solid #fe9d58;
+		background-color: #fe9d58;
+		color:#fff;
+		padding:5px 7px;
+		border-radius: 5px;
+		position: relative;
+	}
+	.rtag .icon{
+		border: 10px solid transparent;
+		border-right-color:#fe9d58;
+		position: absolute;
+		top:15px;
+		left:-20px;
+	}
+	.right  .rate{
+		display:block;
+		position: relative;
+		top:25px;
+		/*margin-top: 50%;*/
+	}
+	/*按钮配色样式*/
+	.right .btn{
+	background-color:#ea7b62;
+	border-color:#ea7b62;
+		color: #fff;
+		width: 120px;
+		height: 30px;
+		/*padding:10px 7px;*/
+		vertical-align: middle;
+		/*line-height: 30px*/
+}
+/*p2p公共结束*/
+/*零存宝开始*/
+.main .lqb .news{
+    display: inline-block;
+    width:84px;
+    height:76px;
+    position: absolute;
+    left:0;
+    top:0;
+    background:url("../img/sp.png") no-repeat -87px -240px;
+}
+.lqb .logo{
+    display:block;
+    width:70px;
+    height:70px;
+    background:url("../img/sp.png") no-repeat -13px -124px;
+    vertical-align: middle;
+    margin:15% 25% 5%;
+    /*使用margin解决占据空间位置问题,不能使用定位,否则不占据文档位置*/
+    /*position:relative;*/
+    /*top:50%;*/
+    /*left:50%;*/
+    /*border:1px solid orange;*/
+    /*transform:translateX(-50%) translateY(-65%);*/
+}
+.lqb .rnum{
+	font-size: 52px;
+	color:#61a0ea;
+}
+.lqb .rtxt{
+	color:#61a0ea;
+	font-size: 20px;
+}
+.lqb .right .btn{
+	background-color:#ea7b62;
+	border:#ea7b62;
+}
+/*零存宝结束*/
+/*整存宝开始*/
+.main .zcb{
+    height: 320px !important;
+}
+.main .zcb .news{
+    display: inline-block;
+    width:84px;
+    height:76px;
+    position: absolute;
+    left:0;
+    top:0;
+    background:url("../img/sp.png") no-repeat -280px -0px;
+}
+.main .zcb .right img{
+    margin-left: 50px;
+}
+.zcb .logo{
+    display:block;
+    width:70px;
+    height:70px;
+    background:url("../img/sp.png") no-repeat -153px -124px;
+    vertical-align: middle;
+    margin:30% 25% 5%;
+}
+.zcb .step{
+	margin-top: 20px;
+}
+.zcb .step p:nth-of-type(1) .stxt{
+	/*position: relative;*/
+	/*left:-1em;*/
+	display: inline-block;
+	margin-top:5px;
+	margin-left:-2px;
+
+}
+.zcb   .step p:nth-of-type(2) .stxt{
+	display: inline-block;
+	margin-top:26px;
+	margin-left:-1.5em;
+}
+.zcb .step p:nth-of-type(3) .stxt{
+	/*position: relative;*/
+	display: inline-block;
+	margin-top:30px;
+	margin-left:-8px;
+}
+.zcb .step p:nth-of-type(4) .stxt{
+	display: inline-block;
+	margin-top:31px;
+	margin-left: -2em;
+}
+.zcb .step p:nth-of-type(5) .stxt{
+	display: inline-block;
+	margin-top:28px;
+	margin-left:-8px;
+}
+.zcb .right{
+	position: relative;
+}
+.zcb .right .rate{
+	position: absolute;
+	right:6px;
+	top:10px;
+	width:500px;
+	height:300px;
+	/*border: 1px solid red;*/
+	box-sizing:border-box;
+}
+.zcb .right .rate .item{
+	width: inherit;
+	/*box-sizing:border-box;*/
+	height:60px;
+	/*border:1px solid #ff0036;*/
+}
+.right .rate .item .irate p span{
+	font-size:26px;
+	color:#61a0ea;
+    line-height: 20px;
+}
+/*.right .rate [class*='col-xs']{*/
+    /*!*border: 1px solid greenyellow;*!*/
+/*}*/
+/*整存宝结束*/
+/*散标开始*/
+.main .sbiao{
+    height: 220px !important;
+}
+.sbiao .logo{
+    display:block;
+    width:64px;
+    height:64px;
+    background:url("../img/sp.png") no-repeat -157px -4px;
+    vertical-align: middle;
+    margin:30% 25% 5%;
+}
+/*散标结束*/
+/*协议模板开始*/
+.main .greement{
+	margin-bottom: 0;
+}
+.main .greement .logo{
+    display:block;
+    width:57px;
+    height:61px;
+    background:url("http://res.iqianjin.com/images/invest/protocol-icon.png");
+    vertical-align: middle;
+    margin:30% 25% 5%;
+}
+.icon1{
+    display: inline-block;
+    width: 18px;
+    height:24px;
+    background:url("../img/sp.png") no-repeat -243px -240px;
+    position: relative;
+    top:-12px;
+}
+.main .greement .right{
+    position: relative;
+    height:inherit;
+}
+.main .greement .box{
+    width:90%;
+    height:140px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.greement .box .item-gmt{
+    width:200px;
+    height:50px;
+    margin-right:17px;
+    border: 1px dashed #bfbfbf;
+}
+.greement .box .item-gmt:nth-of-type(4n){
+    margin-right: 0;
+}
+/*协议模板的子元素内的icon图标*/
+.greement .box .item-gmt a{
+	color:#375372;
+	font-size: 14px;
+	text-decoration: none;
+}
+.greement .box .item-gmt a i{
+display: inline-block;
+	width:34px;
+	height: 31px;
+	background:url("../img/laws-sprite.png");
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+	margin-right:6px;
+	margin-left:10px;
+}
+.greement .box .item-gmt:nth-child(1) a i{
+	background-position: -36px 0;
+}
+.greement .box .item-gmt:nth-child(2) a i{
+	background-position: -37px -41px;
+}
+.greement .box .item-gmt:nth-child(3) a i{
+	height:28px;
+	background-position: -38px -77px;
+
+}
+.greement .box .item-gmt:nth-child(4) a i{
+	width:27px;
+	background-position: -125px 0;
+
+}
+.greement .box .item-gmt:nth-child(5) a i{
+	width:34px;
+	height:30px;
+	background: url(http://res.iqianjin.com/images/about/laws2-sprite.png);
+	background-position: 0 -27px;
+
+}
+.greement .box .item-gmt:nth-child(6) a i{
+	width:34px;
+	height:27px;
+	background: url(http://res.iqianjin.com/images/about/laws2-sprite.png) 0 0;
+
+}
+/*协议模板结束*/

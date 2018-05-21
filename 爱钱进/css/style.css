@@ -258,6 +258,14 @@
 		margin:60px -5px;
 		padding:5px 18px;
 	}
+    /*p2p产品按钮*/
+    #content .p2p .row .btn{
+        background-color:#f6765f;
+        color: #ffffff!important;
+    }
+    #content .p2p .row .btn:hover{
+    background-color:#eb664e!important;
+    }
 	.right .btn{
 		position:relative;
 		/*right:200px;*/
@@ -347,13 +355,14 @@
 #parter{
     margin-top:20px;
     min-width: 1170px;
-    height:80px;
+    /*height:90px;*/
     background-color:#e4e4e4;
+    padding:22px 0;
+    overflow: hidden;
 }
 #parter ul li{
     list-style: none;
     float: left;
-
 }
 #parter ul li img{
     margin:0  20px;
