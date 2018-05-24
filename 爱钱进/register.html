@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱钱进注册页面</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<style>
+    body{
+        background-color:#eaedf2;
+    }
+    a{
+        text-decoration: none!important;
+    }
+    .ptxt{
+        font-size: 14px;
+        color:#aaaaaa;
+    }
+    <!--顶部内容-->
+        .logo{
+            width:72px;
+            height:22px;
+            background:url("img/sp1-new.png") no-repeat ;
+            background-position: -416px -166px;
+            margin: 0 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    .logo:hover{
+        background-position: -416px -196px;
+    }
+    /*顶部结束*/
+    /*底部*/
+    #footer {
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align: center;
+        /*position: fixed;*/
+        left:0;
+        bottom:0;
+        margin-top:0px;
+    }
+    #footer .container *{
+        color:#72849c;
+        font-size: 15px;
+        margin-left: 5px;
+        text-decoration:none;
+    }
+    #footer .container a:hover{
+        color:#fff;
+    }
+    /*内容区域*/
+    #content{
+        min-width: 1200px;
+        height:700px;
+        border: 1px solid #666;
+        background-color:#eaedf2;
+    }
+    #content .container{
+        padding:15px 25px;
+        height:70%;
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        border: 1px solid orangered;
+
+    }
+    #content .container .login-box{
+        /*height:400px;*/
+        /*border: 1px solid orange;*/
+        position: absolute;
+        bottom:80px;
+        left:120px;
+    }
+    /*登录框*/
+    #content .container .login-box .user{
+        position: relative;
+        margin: 15px 0;
+    }
+    .login-box  input{
+        width:332px;
+        height:18px;
+        padding: 20px 10px 20px 15px;
+        text-indent:2.3em;
+        background-color:#f2f4f9;
+        border:1px solid transparent;
+        outline: none;
+    }
+    /*注册手机小图标*/
+    .login-box .user .phone{
+        position: absolute;
+        display: inline-block;
+        background-position: -207px -69px;
+        width: 16px;
+        height: 23px;
+        background-image: url(img/sp1.png);
+        left:0.6em;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    /*密码输入框的icon图片*/
+    .login-box .user .pwd{
+        position: absolute;
+        display: inline-block;
+        background-position: -464px -228px;
+        width:26px;
+        height:25px;
+        background-image: url(img/sp1.png);
+        left:0.6em;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .login-box .user .line{
+        display:inline-block;
+        height:22px;
+        width:2px;
+        position: absolute;
+        border-right:1px solid #dbdbdb;
+        left:2.5em;
+        top:50%;
+        transform:translateY(-50%);
+    }
+    /*验证码部分*/
+    .dx-yzm{
+        width:160px;
+        margin-left: 14px;
+        color:#fff;
+        background-color:#15bc9b;
+    }
+    /*滑过样式*/
+    .dx-yzm:hover{
+        color:#fff;
+        background-color:#0cd4ac;
+    }
+    /*用户协议服务*/
+    .pwds{
+        /*margin: 12px 0;*/
+        padding:17px 37px 12px 12px;
+    }
+    .pwds [type='checkbox']{
+        width:20px;
+    }
+    /*注册按钮*/
+    .row .login-btn{
+        background:#ec7b5e;
+        color:#fff;
+    }
+    /*安全证书*/
+    .security{
+        margin: 18px 0;
+    }
+    .security i{
+        display: inline-block;
+        margin-right: 5px;
+        background-position: -26px -321px;
+        width: 16px;
+        height: 17px;
+        background-image: url(img/sp1.png);
+        position: relative;
+        top:3px;
+
+    }
+    /*输入框聚焦样式*/
+    input:focus{
+        /*border: 1px solid #ffbe8f;*/
+        /*box-shadow: 0 0 3px #ffbe8f*/
+        border: 1px solid #90c1f5;
+        box-shadow: 0 0 3px #90c1f5;
+    }
+</style>
+<body>
+<nav id="header" style="background-color: #fff">
+    <div class="aqj-top">
+        <div class="box container">
+            <div class="pull-left logo"></div>
+            <div class="pull-left"><i class="mobile"></i><span>手机爱钱进</span></div>
+            <div class="pull-right">
+                <ul class="nav-link ">
+                    <li><i class="phone"></i><span>400-812-8808(9:00-21:00)</span></li>
+                    <li><i class="chat"></i><span>在线客服</span></li>
+                </ul></div>
+        </div>
+        <div class="aqj-menu" >
+            <div class="box" >
+                <h4  style="margin-left:14px;line-height:25px">用户注册</h4>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<!--登录页面内容-->
+<div id="content">
+    <div class="container">
+        <h4 class="pull-right">已有账号？ <a href="login.html" class="aqjred">立即登录</a></h4>
+        <div class="login-box col-xs-5">
+            <!--手机号输入框-->
+            <div class="user">
+                <i class="phone"></i><span class="line"></span>
+                <input type="text" placeholder="请输入您的常用手机号码" class="usertxt">
+            </div>
+            <!--密码输入框-->
+            <div class="user">
+                <i class="pwd"></i><span class="line"></span>
+                <input type="text" placeholder="请输入密码" class="pwdtxt">
+            </div>
+            <!--验证码-->
+            <div class="yzm">
+                <input type="text" class="yzmtxt" placeholder="获取短信验证码" style="width:150px;text-indent: 0.5em">
+                <a href="javascript:void(0)"class="btn dx-yzm">获取短信验证码</a>
+            </div>
+            <!--用户注册条款服务-->
+            <div class="row pwds">
+                <div class="pull-left"><input type="checkbox" class="col-xs-2 check" checked style="position: relative;top:-2px;margin-right:3px;: ">我已阅读，并同意
+                    <a href="JavaScript:void(0)"  id="zc" data-target="#reg">《注册协议》</a>与 <a id="num" href="JavaScript:void(0)" data-target="#numxy">《CFCA数字证书服务协议》</a> </div>
+            </div>
+            <!--登录按钮-->
+            <div class="row center-block"><a href="javascript:void(0)" class="btn  login-btn col-xs-8">立即注册</a></div>
+            <!--安全证书-->
+            <div class="security">
+                <i class="secu"></i><span>您的信息已使用SSL加密技术，数据传输安全</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容区域结束-->
+<!--底部导航-->
+<footer id="footer">
+    <div class="container">
+        <span class="txt">©2018 iqianjin.com.All Rights Reserved</span><a href="">京ICP备14017729  投资有风险，投资需谨慎</a>
+    </div>
+</footer>
+<!--boot模态框开始-->
+    <!--注册模态框-->
+<div class="modal fade"  id="reg">
+    <div class="modal-dialog">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h3>用户注册及服务协议</h3>
+            </div>
+            <div class="modal-body">
+                爱钱进（北京）信息科技有限公司（以下简称“服务方”）通过其运营的网站（www.iqianjin.com）/手机应用程序/微信客户端等（以下简称“爱钱进”）为用户实现直接借贷提供信息搜集、信息公布、信息交互、借贷撮合、合同管理、资金管理等服务（以下简称“爱钱进服务”）。本《用户注册及服务协议》（以下简称“本协议”）是用户与服务方之间订立的关于用户在爱钱进进行注册、登录以及使用爱钱进服务的协议。本协议适用于您在爱钱进的全部活动。<br>
+                <h5>服务方特别提醒您认真阅读本协议，确保您在注册成为爱钱进用户前，已充分理解本协议中的所有条款，特别是其中涉及的对服务方免责、对网络借贷风险提示以及对用户权利限制和禁止性行为进行约定的条款。除非您接受本协议所有条款，否则您无权在爱钱进进行注册、登录或者使用爱钱进服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束，您不得以未签署书面协议为由，否认本协议的效力。服务方有权通过爱钱进向用户公布关于爱钱进服务的规则，该等规则构成本协议不可分割的一部分，与本协议具有同等法律效力。</h5>
+
+            </div>
+            <div class="modal-footer">
+                <h3>爱钱进（北京）信息科技有限公司</h3>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--数字协议模态框-->
+        <div class="modal fade" id="numxy">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button  class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h3 class="text-center">CFCA数字证书服务协议</h3>
+
+                    </div>
+                    <div class="modal-body">
+                        <h3>尊敬的网上用户：
+
+                            中金金融认证中心有限公司(即中国金融认证中心，简称“CFCA”)是经国家有关管理机关审批设立的电子认证服务机构，作为权威的第三方安全认证机构，通过数字证书注册机构（以下简称“RA”）向网上用户（以下简称“订户”）发放数字证书，为订户网上交易提供信息安全保障。
+
+                            订户在申请使用CFCA签发的数字证书之前，应先阅读并同意"CFCA数字证书服务协议"(以下简称"本协议")。本协议构成订户与中金金融认证中心有限公司之间的权利义务约定，若不同意本协议全部或部分条款，请勿申请使用CFCA数字证书。订户一旦完成CFCA数字证书的下载或初次使用，即表明同意接受并愿意遵守本协议的所有条款。</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <h4>中金金融认证中心有限公司
+                            <br>
+                            (中国金融认证中心)
+                            <br>
+                            2015年8月4日</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--模态框初始化-->
+<script>
+    $(function(){
+        //注册协议页面
+        $('#zc').on('click',function(){
+            $('#reg').modal('show');
+        })
+    //    数字服务协议
+        $('#num').on('click',function(){
+            $('#numxy').modal('show');
+        })
+    })
+</script>
+<!--模态框结束-->
+</body>
+</html>
