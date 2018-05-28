@@ -2,18 +2,6 @@
 	padding:0;
 	margin:0;
 }
-	/*禁用响应式*/
-	.container { 
-				width: 1170px !important; 
-				max-width: none !important; 
-				}
-				/*一下解决轮播图占用当前页面100%问题*/
-		@media screen and (max-width: 1400px) { 
-				body{ 
-				width: 1400px; 
-				} 
-		}
-		/*禁用响应式结束*/
 	/*全局样式开始*/
 	a{
 		color:rgb(115, 133, 157);
@@ -28,7 +16,6 @@
 	nav{
 		min-width:1200px;
 		height:80px;
-		/*border: 1px solid red;*/
 		line-height:30px;
         cursor: pointer;
 	}
@@ -93,9 +80,10 @@
 	nav .aqj-menu{
 		height:50px;
 	}
-	nav .aqj-menu .box,.aqj-top .box{
+/*nav .aqj-menu .box,.aqj-top .box*/
+	.box{
 		margin: 0 auto;
-		width: 1170px!important;
+		max-width: 1170px!important;
 	}
 	nav .aqj-menu .logo{
 		background-image: url(../img/sp1-new.png);
@@ -196,7 +184,7 @@ footer .ewm dd{
 /*copy部分*/
 footer .copy{
     width:100%;
-    background-color:#3f4448;
+    background-color:#363b3f;
     /*height:80px;*/
 }
 footer .copy ul li{

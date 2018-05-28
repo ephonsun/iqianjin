@@ -5,11 +5,22 @@
     <title>爱钱进注册页面</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/resopnd.css" />
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/header.css">
+    <script src="js/console.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body,html{
+		height:100%;
+	}
     body{
         background-color:#eaedf2;
     }
@@ -20,7 +31,32 @@
         font-size: 14px;
         color:#aaaaaa;
     }
-    <!--顶部内容-->
+     /*顶栏响应式处理*/
+     		.tbox{
+     		margin: 0 auto;
+			max-width: 1170px!important;
+     		}
+     		@media (min-width: 768px) {
+       			.container {
+       				width:1170px!important;
+       			}
+       		}
+       		@media (min-width: 992px) {
+       			.container {
+       				width:1170px!important;
+       			}
+       		}
+       		@media (min-width: 1200px) {
+       			.container {
+       				width: 1170px!important;
+       			}
+       		}
+    /*<!--顶部内容-->*/
+       	nav {
+       		background-color: #fff;
+       		border-bottom: 1px solid rgb(219, 224, 233);
+       		min-width: 1170px;
+       	}
         .logo{
             width:72px;
             height:22px;
@@ -36,10 +72,11 @@
     /*顶部结束*/
     /*底部*/
     #footer {
-        padding-top:10px;
-        padding-bottom:10px;
+        padding-top:20px;
+        padding-bottom:20px;
         text-align: center;
-        /*position: fixed;*/
+        position: fixed;
+        width: 100%;
         left:0;
         bottom:0;
         margin-top:0px;
@@ -55,24 +92,21 @@
     }
     /*内容区域*/
     #content{
-        min-width: 1200px;
+        min-width:1170px;
         height:700px;
-        border: 1px solid #666;
         background-color:#eaedf2;
     }
     #content .container{
         padding:15px 25px;
         height:70%;
         position: relative;
-        top:50%;
+        top:45%;
         transform: translateY(-50%);
         background-color: #fff;
-        border: 1px solid orangered;
-
+        margin: 0 auto;
+		max-width: 1170px!important;
     }
     #content .container .login-box{
-        /*height:400px;*/
-        /*border: 1px solid orange;*/
         position: absolute;
         bottom:80px;
         left:120px;
@@ -167,8 +201,6 @@
     }
     /*输入框聚焦样式*/
     input:focus{
-        /*border: 1px solid #ffbe8f;*/
-        /*box-shadow: 0 0 3px #ffbe8f*/
         border: 1px solid #90c1f5;
         box-shadow: 0 0 3px #90c1f5;
     }
@@ -176,7 +208,7 @@
 <body>
 <nav id="header" style="background-color: #fff">
     <div class="aqj-top">
-        <div class="box container">
+        <div class="tbox container">
             <div class="pull-left logo"></div>
             <div class="pull-left"><i class="mobile"></i><span>手机爱钱进</span></div>
             <div class="pull-right">
@@ -185,13 +217,14 @@
                     <li><i class="chat"></i><span>在线客服</span></li>
                 </ul></div>
         </div>
-        <div class="aqj-menu" >
+       
+    </div>
+     <div class="aqj-menu" style="position: relative;" >
             <div class="box" >
-                <h4  style="margin-left:14px;line-height:25px">用户注册</h4>
+                <h4  style="margin-left:23px;position: absolute;line-height:35px;">用户注册</h4>
             </div>
 
         </div>
-    </div>
 </nav>
 <!--登录页面内容-->
 <div id="content">

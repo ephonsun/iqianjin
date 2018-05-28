@@ -2,24 +2,24 @@
 	padding:0;
 	margin:0;
 }
-/*#banner{
-	width: 100%;
-	height:100%;
-}*/
-.container {
-    padding:0!important;
+@media screen and (max-width: 1200px) {
+    #banner{
+        width: 1200px;
+    }
 }
- div.item img{
-    width:100%;
+div.item img{
+    min-width: 1400px;
    }
    #banner{
    	position: relative;
    	overflow: hidden; 
    	height: 310px;
+       min-width:1170px;
    }
-  #banner .item a{
+  #banner .item a,#banner .bxslider img{
   	display: inline-block;
   	width: 100%;
+      min-width:1170px;
   	height:310px;
   }
   /*控制轮播的左右翻页样式*/
@@ -30,18 +30,18 @@
  		color:#fff;
  		border: 1px solid #666;
  		z-index: 30;
+        display: none;
  	}
 /*右侧登陆框*/
 	#banner .login{
 		position: absolute;
-		right:0px;
-		top:0px;
-		/*height:184px;*/
+		right:20px;
+        width:280px;
+        bottom: 20px;
 		overflow: hidden;
 		padding:30px 15px;
 		background: rgba(0,0,0,0.6);
 		color: #fff;
-		
 	}
 	#banner .login .login-btn{
 		padding: 5px 56px;
@@ -52,8 +52,6 @@
 	#data{
 		min-width:1200px;
 		height:80px;
-		/*border: 1px solid orange;*/
-		/*margin-top: 40px;*/
 		background: #fff;
 		padding:0;
 	}
@@ -128,13 +126,14 @@
 	}
 		/*新手特权*/
 	#content .xstq{
-		width:1170px;
+        /*新增取消固定宽度*/
+		/*width:1170px;*/
 		margin:0px auto;
 		margin-top: 20px;
 		padding-top: 20px;
 		height:180px;
-		border:1px solid rgb(237, 124, 94)!important;;
 		background: #fff;
+        position: relative;
 	}	
 	#content .xstq ul{
 		display: flex;
@@ -177,11 +176,10 @@
 	#content .p2p{
 		background-color: #fff;
 		margin-top: 20px;
-		height:890px;
-		/*overflow: hidden;*/
-		border: 1px solid red;
-		/*overflow: hidden;*/
-		width:1170px;
+        overflow: hidden;
+		height:auto;
+        /*取消固定宽度，取用box响应式宽度,同时启用响应式max-width*/
+        max-width:1170px;
 	}
 	/*零钱宝样式*/
 	#content .p2p .lqb{
@@ -251,12 +249,18 @@
 		font-size: 1.4em;
 		color: #666;
 	}
-	/*立即加入按钮*/
+	/*立即加入按钮（p2p列表的按钮）*/
 	#content .p2p .btn{
-		background-color:#fff;
-		border:1px solid #f1905e;
+        display: block;
+        width:120px;
+        position: absolute;
+        left:550px;
+		background-color:rgb(246, 118, 95);
+		border:1px solid #f6765f;
+        color: #ffffff !important;
 		margin:60px -5px;
 		padding:5px 18px;
+        /*right:200px;*/
 	}
     /*p2p产品按钮*/
     #content .p2p .row .btn{
@@ -278,7 +282,10 @@
 	}
 	#content .p2p .zcb .row{
 		margin-top:0px;
-		/*height:120px;*/
+        position: relative;
+        /*相对定位，用于盒子内按钮的参考*/
+        /*height:120px;*/
+        margin-bottom:28px;
 		/*overflow:hidden;*/
 	}
 	.p2p .zcb .wel{
@@ -286,7 +293,7 @@
 		width:65px;
 		height:55px;
 		top:0;
-		left: 0;
+		left:13px;
 		background: url(../img/index-sp.png) no-repeat -475px -135px;
 	}
 	.p2p .zcb .left{
