@@ -375,4 +375,52 @@ div.item img{
     margin:0  20px;
     padding-top: 20px;
 }
-
+/*右侧边栏样式*/
+#siderBar{
+	position:fixed;right:20px;bottom:20px;
+}
+#siderBar ul{
+	width:60px;
+	width:60px;
+	margin-top:120px;
+	background-color: rgb(54, 59, 63);
+}
+#siderBar ul li{
+	height:45px;
+	width:60px;
+	line-height: 45px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#siderBar ul li i{
+	display:block;
+	width:45px;
+	line-height: 45px;
+	margin: 0 auto;
+	font-size:30px;
+	text-align: center;
+	color:#ccc;
+}
+#siderBar ul li a{
+	color:#fff;
+	text-decoration: none;
+	position: relative;
+}
+#siderBar ul li a .rightTxt{
+	position: absolute;
+	width:140px;
+	top:-45px;
+	border-radius:5px;
+	text-align: center;
+	right:-220px;
+	padding:0px 0px;
+	background-color: rgb(54, 59, 63);
+	transition: .6s right .1s;
+}
+#siderBar ul li:hover a .rightTxt{
+	right:0;
+}
+/*下载APP图片的下面具体*/
+#siderBar ul li:hover a .rightTxt img{
+	margin-bottom: 20px;
+}

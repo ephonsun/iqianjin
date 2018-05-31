@@ -32,7 +32,8 @@ $(function(){
             })
         })
     })
-
+	//轮播登录框动画效果
+	$('#banner .box').animate({'top':'-280px'},800),'easeInBounce';
 
 })
 

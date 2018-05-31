@@ -1,10 +1,10 @@
 /*注册登录页面响应处理*/
 @media screen and (max-width:980px){
 			nav .aqj-top,footer{
-				display:none;
+				display:none!important;
 			}
 			.aqj-menu  h4{
-				line-height:50px
+				line-height:50px!important;
 				}
 			#content>.container{
 				height:100%!important;
