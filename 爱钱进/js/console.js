@@ -56,3 +56,14 @@ console.log("%c用来练习的每一个网页,并不是因为它简单,容易上
 console.log("%c一张曾经很火的头像,小红帽","color:#636363;font-size:58px;");
 console.log("%c","padding:100px 200px;background-size:cover;line-height:250px;background:url('https://i.niupic.com/images/2018/05/20/5r4h.jpg') no-repeat");
 console.log("%c无论如何也挡不住偷看代码的欲望,但希望可以每一位开发者,因为每一位开发者开发都不容易!\n%c开发不易,掉发容易;珍重程序员的每根头发,编程挺好,就是头发有点少,手动滑稽","color:#636363;width:1200px;padding-left:80px;font-size:58px;","color:#666;background:skyblue;font-size:58px;padding-left:80px");
+//判断a的href是否为空
+$(function(){
+	$('a').unbind('click').click(function(){
+		var ahref=$(this).attr('href');
+		if(ahref==false){
+			console.log('1');
+			alert('项目展示,并非官方站点,不做连接跳转');
+		}
+
+	})
+})

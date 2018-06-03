@@ -421,6 +421,6 @@ div.item img{
 	right:0;
 }
 /*下载APP图片的下面具体*/
-#siderBar ul li:hover a .rightTxt img{
+#siderBar ul li a .rightTxt img{
 	margin-bottom: 20px;
 }
